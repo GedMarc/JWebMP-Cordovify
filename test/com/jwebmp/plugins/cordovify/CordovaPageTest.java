@@ -15,29 +15,30 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package za.co.mmagon.jwebswing.plugins.cordovify;
+package com.jwebmp.plugins.cordovify;
 
+import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.jwebswing.Page;
 
 /**
  * @author GedMarc
  */
 public class CordovaPageTest
 {
-	
+
 	public CordovaPageTest()
 	{
 	}
-	
+
 	@Test
 	public void testSomeMethod()
 	{
 		Page p = new Page();
-		p.getBody().add("Hello World");
-		
+		p.getBody()
+		 .add("Hello World");
+
 		System.out.println(p.toString(0));
-		
+
 	}
-	
+
 }

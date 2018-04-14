@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.cordovify;
+package com.jwebmp.plugins.cordovify;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.plugins.PluginInformation;
 
 /**
  * @author GedMarc
@@ -38,26 +38,28 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/Cordovify.jar/download",
 		pluginIconUrl = "bower_components/radial-svg-slider-jwebswing/example.png",
 		pluginIconImageUrl = "bower_components/radial-svg-slider-jwebswing/example.png",
-		pluginLastUpdatedDate = "2017/09/22"
-)
-public class CordovaPageConfigurator extends PageConfigurator
+		pluginLastUpdatedDate = "2017/09/22")
+public class CordovaPageConfigurator
+		extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
 			Page p = page;
-			
-			if (page.getOptions().isGoogleMapsJSApi())
+
+			if (page.getOptions()
+			        .isGoogleMapsJSApi())
 			{
-				p.getBody().addJavaScriptReference(new JavascriptReference("Cordova JS ", 1.0, "cordova/browser/cordova.js"));
+				p.getBody()
+				 .addJavaScriptReference(new JavascriptReference("Cordova JS ", 1.0, "cordova/browser/cordova.js"));
 			}
 		}
 		return page;
 	}
-	
+
 }
