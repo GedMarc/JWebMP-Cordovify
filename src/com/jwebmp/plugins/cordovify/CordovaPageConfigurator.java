@@ -51,13 +51,8 @@ public class CordovaPageConfigurator
 		if (!page.isConfigured())
 		{
 			Page p = page;
-
-			if (page.getOptions()
-			        .isGoogleMapsJSApi())
-			{
-				p.getBody()
-				 .addJavaScriptReference(new JavascriptReference("Cordova JS ", 1.0, "cordova/browser/cordova.js"));
-			}
+			p.getBody()
+			 .addJavaScriptReference(new JavascriptReference("Cordova JS ", 1.0, "cordova/browser/cordova.js"));
 		}
 		return page;
 	}
