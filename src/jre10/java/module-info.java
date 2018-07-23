@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.cordovify.CordovaPageConfigurator;
+
 module com.jwebmp.plugins.cordovify {
 	exports com.jwebmp.plugins.cordovify;
 
@@ -6,4 +9,7 @@ module com.jwebmp.plugins.cordovify {
 	requires com.fasterxml.jackson.annotation;
 
 	requires java.validation;
+
+	provides IPageConfigurator with CordovaPageConfigurator;
+
 }
