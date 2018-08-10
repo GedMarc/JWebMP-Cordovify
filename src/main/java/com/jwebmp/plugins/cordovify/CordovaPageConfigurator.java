@@ -21,6 +21,8 @@ import com.jwebmp.core.base.references.JavascriptReference;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.services.IPageConfigurator;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @author GedMarc
  */
@@ -42,6 +44,7 @@ import com.jwebmp.core.services.IPageConfigurator;
 public class CordovaPageConfigurator
 		implements IPageConfigurator
 {
+	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
