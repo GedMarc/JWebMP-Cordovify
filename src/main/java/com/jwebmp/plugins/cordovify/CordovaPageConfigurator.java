@@ -33,16 +33,16 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "jquery",
 		pluginCategories = "cordova, mobile, hybrid",
 		pluginSubtitle = "Integrate Cordova Plugins instantly with this guy",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Cordovify",
-		pluginSourceUrl = "https://github.com/GedMarc/JWebSwing-Cordovify",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Cordovify/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Cordovify",
+		pluginSourceUrl = "https://github.com/GedMarc/JWebMP-Cordovify",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Cordovify/wiki",
 		pluginOriginalHomepage = "https://cordova.io",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/Cordovify.jar/download",
 		pluginIconUrl = "bower_components/radial-svg-slider-jwebswing/example.png",
 		pluginIconImageUrl = "bower_components/radial-svg-slider-jwebswing/example.png",
 		pluginLastUpdatedDate = "2017/09/22")
 public class CordovaPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<CordovaPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
