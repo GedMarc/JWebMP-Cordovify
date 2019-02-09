@@ -78,7 +78,7 @@ public class CordovaPageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			Page p = page;
 			p.getBody()
